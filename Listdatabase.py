@@ -5,7 +5,7 @@ Format of the csv file:
 name,author,read\n
 """
 
-books_file = 'boot.txt'
+books_file = 'book.txt'
 
 def add_book(name, author):
     with open(books_file, 'a') as file:
