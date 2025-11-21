@@ -37,10 +37,13 @@ def prompt_add_book():
 
 def list_books():
     books_return = get_all_books()
-    for book_return in books_return:
-        read = 'YES' if book_return['read'] else 'NO'
-        print("author {} with title {} read {}".format(book_return["author"], book_return["name"], read))
 
+    for book_return in books_return:
+        #unico cambio necesario:
+        #read = 'YES' if book_return['read'] else 'NO'
+        read = 'YES' if book_return['read'] == '1' else 'NO'
+        print("author {} with title {} read {}".format(book_return['author'], book_return['name'], read))
+        #print("author {} with title {} read {}".format(book_return["author"], book_return["name"], book_return['read']))
 
 def prompt_read_book():
     name = input('Enter the name of de book you just finished reading: ')
