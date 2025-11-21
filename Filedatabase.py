@@ -8,7 +8,7 @@ name,author,read\n
 books_file = "books.txt"
 def add_book(name, author):
     with open(books_file, 'a') as file:
-        file.write(f'{name},{author}'0) #Cero for false, one for true
+        file.write(f'{name},{author},0') #Cero for false, one for true
 
 def get_all_books():
     #[[name, author,read], [name, author,read]]
@@ -28,5 +28,6 @@ def get_all_books():
 
 def mark_book_as_read(name):
     pass
+
 def delete_book(name):
    pass
