@@ -1,7 +1,7 @@
 # Serie Bases de Datos con Python
 ## Ficheros
 
-Simulamos una base de datos utilizando una **Lista**
+
 
 En el fichero Filedatabase.py declaramos el nombre del fichero
 > books_file = 'book.txt'
