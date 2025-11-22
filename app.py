@@ -10,9 +10,10 @@ _ 'r' to mark a book as read
 _ 'd' to delete a book
 - 'q' to quit
 
-Your choice:"""
+Your choice: """
 
 def menu():
+    create_book_table()
     user_input = input(USER_CHOICE)
     while user_input != 'q':
         if user_input == 'a':

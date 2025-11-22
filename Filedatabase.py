@@ -7,6 +7,17 @@ name,author,read\n
 
 books_file = 'books.txt'
 
+def create_book_table():
+    try:
+        with open(books_file, 'x') as file:
+            pass #No hacemos nada, solo crear el fichero
+    except FileExistsError:
+        pass #El fichero ya existe, no pasa nada
+    except OSError as e:
+        print(f"Error al crear el fichero: {e}")
+
+    
+
 def add_book(name, author):
     try:
         with open(books_file, 'a') as file:
